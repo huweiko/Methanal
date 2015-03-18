@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutHistoryEditActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/navigationbar_bg">
+		<TextView 
+		    android:id="@+id/TextViewHistoryLogClear"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="10dp"
+		    android:layout_alignParentLeft="true"
+		    android:gravity="center_vertical"
+		    android:text="清除"
+		    android:textSize="24sp"
+		    android:textColor="@color/white"
+		    android:visibility="visible"/>
+        <TextView
+            android:id="@+id/TextViewMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="历史日志"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+		<TextView 
+		    android:id="@+id/TextViewHistoryLogFinish"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:paddingRight="10dp"
+		    android:layout_alignParentRight="true"
+		    android:gravity="center_vertical"
+		    android:text="完成"
+		    android:textSize="24sp"
+		    android:textColor="@color/white"
+		    android:visibility="visible"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_edging_style">
+        <ListView
+		    android:id="@+id/history_log_listview"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@color/transparent" >
+		</ListView>
+    </LinearLayout>
+</LinearLayout>

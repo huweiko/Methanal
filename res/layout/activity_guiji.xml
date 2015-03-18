@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/navigationbar_bg">
+		<Button 
+		    android:id="@+id/ButtonGuiJiActivityBack"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="@string/back"
+		    android:padding="5dp"
+		    android:textSize="20sp"
+            android:textColor="@color/white"
+		    android:background="@color/transparent"/>
+		<Button 
+		    android:id="@+id/ButtonGuiJiActivityEdit"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="@string/dev_edit"
+		    android:padding="5dp"
+		    android:layout_alignParentRight="true"
+		    android:textSize="20sp"
+            android:textColor="@color/white"
+		    android:background="@color/transparent"/>
+		<Button 
+		    android:id="@+id/ButtonGuiJiActivityFinish"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="@string/dev_finish"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="5dp"
+		    android:textSize="20sp"
+            android:textColor="@color/white"
+		    android:background="@color/transparent"
+		    android:visibility="gone"/>
+        <TextView
+            android:id="@+id/TextViewGuiJiTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/guiji_show_title"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_edging_style">
+        <ListView
+		    android:id="@+id/ListViewGuiJi"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent" >
+		</ListView>
+    </LinearLayout>
+
+</LinearLayout>

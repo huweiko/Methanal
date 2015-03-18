@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/navigationbar_bg">
+
+        <TextView
+            android:id="@+id/TextViewMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+		<TextView 
+		    android:id="@+id/TextViewHistoryLogEdit"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:paddingRight="10dp"
+		    android:layout_alignParentRight="true"
+		    android:gravity="center_vertical"
+		    android:text="编辑"
+		    android:textSize="24sp"
+		    android:textColor="@color/white"
+		    android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <com.example.methanal.custom.CustomViewPager
+        android:layout_weight="1"
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/main_back_pic"
+        android:persistentDrawingCache="animation"
+        tools:context=".MainActivity" />
+    
+    <LinearLayout
+        android:id="@+id/RelativeMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menu_color"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/ImageButtonMenuShareSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/menu_share_setting"
+            android:background="@color/menu_color"
+            />
+        <ImageButton
+            android:id="@+id/ImageButtonMenuCheckShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/menu_check_on"
+            android:background="@color/menu_color"
+             />
+        <ImageButton
+            android:id="@+id/ImageButtonMenuHistoryLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/menu_history"
+            android:background="@color/menu_color"
+             />
+    </LinearLayout>
+
+</LinearLayout>
